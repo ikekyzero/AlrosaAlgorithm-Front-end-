@@ -1,0 +1,153 @@
+@font-face {
+  font-family: Raleway-Regular;
+  src: url("../font/Raleway-Regular.ttf");
+}
+@font-face {
+  font-family: Avenirnextcyr-Regular;
+  src: url("../font/avenirnextcyr-regular.ttf");
+}
+@font-face {
+  font-family: Avenirnextcyr-Medium;
+  src: url("../font/avenirnextcyr-medium.ttf");
+}
+.logo {
+  height: 2vh;
+  text-align: center;
+  image-rendering: -webkit-optimize-contrast;
+}
+.myNav {
+  background-image: url("../images/background_header.png");
+  font-family: Avenirnextcyr-Medium;
+}
+.boxsize-input {
+  width: 5rem;
+}
+.file-input {
+  width: 20rem;
+}
+.nav-link {
+  color: white !important;
+  font-size: 0.6rem;
+}
+.Slider {
+  background-image: url("../images/background_slider.png");
+  font-family: Avenirnextcyr-Regular;
+  height: 10rem;
+  color: white;
+  letter-spacing: 8px;
+}
+.center {
+  padding-top: 3.6rem;
+  margin-left: 0.6vw;
+}
+.px-10 {
+  padding-left: 12rem !important;
+  padding-right: 12rem !important;
+}
+.navbar-brand-centered {
+  position: absolute;
+  left: 50%;
+  display: block;
+  width: 160px;
+  text-align: center;
+  background-color: transparent;
+}
+.myform_number {
+  height: 1.5rem;
+  padding: 0.75rem 0.75rem !important;
+  font-size: 0.8rem !important;
+  font-family: Avenirnextcyr-Medium;
+}
+.form-label {
+  font-family: Avenirnextcyr-Medium;
+}
+.myform_file {
+  height: 1.8rem;
+  font-family: Avenirnextcyr-Medium;
+}
+.btn,
+input,
+input:active,
+.btn:focus,
+.btn:active:focus,
+.btn.active:focus,
+.btn.focus,
+.btn:active.focus,
+.btn.active.focus {
+  outline: none !important;
+  outline-offset: none !important;
+  box-shadow: none !important;
+}
+.lds-grid {
+  display: inline-block;
+  position: relative;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  left: 50%;
+  top: 55%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.lds-grid div {
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: rgb(175, 21, 167);
+  animation: lds-grid 1.2s linear infinite;
+}
+.lds-grid div:nth-child(1) {
+  top: 8px;
+  left: 8px;
+  animation-delay: 0s;
+}
+.lds-grid div:nth-child(2) {
+  top: 8px;
+  left: 32px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(3) {
+  top: 8px;
+  left: 56px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(4) {
+  top: 32px;
+  left: 8px;
+  animation-delay: -0.4s;
+}
+.lds-grid div:nth-child(5) {
+  top: 32px;
+  left: 32px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(6) {
+  top: 32px;
+  left: 56px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(7) {
+  top: 56px;
+  left: 8px;
+  animation-delay: -0.8s;
+}
+.lds-grid div:nth-child(8) {
+  top: 56px;
+  left: 32px;
+  animation-delay: -1.2s;
+}
+.lds-grid div:nth-child(9) {
+  top: 56px;
+  left: 56px;
+  animation-delay: -1.6s;
+}
+@keyframes lds-grid {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
