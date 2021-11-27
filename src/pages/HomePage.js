@@ -14,33 +14,33 @@ function HomePage() {
   };
   return (
     <div className="center-form">
-      <Container>
+      <Container className="mt-3">
         <Form onSubmit={handleSubmit(onSubmit)}>
           <div className="w-100">
-            <label className="form-label">Количество боксов</label>
-            <Form.Group className="mb-3 boxsize-input">
+            <div className="d-inline-block mr-4">
+              <label className="form-label">Количество боксов: </label>
               <Form.Control
                 {...register("boxsize", { required: true })}
                 type="number"
                 name="boxsize"
                 min="2"
-                className="myform_number"
+                className="myform_number ml-2 d-inline-block"
               />
-            </Form.Group>
+            </div>
+            <div className="d-inline-block mr-4">
+              <Form.Label>Загрузите dataset: </Form.Label>
+              <Form.Control
+                {...register("newfile", { required: true })}
+                type="file"
+                name="newfile"
+                size="sm"
+                className="myform_file d-inline-block ml-2"
+              />
+            </div>
+            <button type="submit" className="btn btn-purple">
+              Начать сортировку
+            </button>
           </div>
-          <Form.Label>Загрузите excel-файл или json-файл</Form.Label>
-          <Form.Group className="mb-3 file-input">
-            <Form.Control
-              {...register("newfile", { required: true })}
-              type="file"
-              name="newfile"
-              size="sm"
-              className="myform_file"
-            />
-          </Form.Group>
-          <Button variant="warning" type="submit">
-            Начать сортировку
-          </Button>
         </Form>
       </Container>
     </div>
